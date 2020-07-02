@@ -1,0 +1,19 @@
+<!DOCTYPE html>
+<html lang="es">
+    <head>
+        <meta charset="utf-8">
+        <link href="styles/styles.css" rel="stylesheet" type="text/css">
+    </head>
+    <body>
+        <header>
+            <ul class="menu">
+                <li><a href="/">Inicio</a></li>
+            </ul>
+            {% block header %} {% endblock %}
+        </header>
+        <section>
+            {% block content %} {% endblock %}
+        </section>
+        {% block footer %}{% endblock %}
+    </body>
+</html>
